@@ -5,4 +5,3 @@ Sign language is an incredible advancement that brings the deaf and the dumb peo
 ## Methodology
 The signs are read using a webcam. The deaf and dumb person who is signing is made to stand in front of the webcam and the image captured from this is processed by skin segmentation and pose estimation which then decodes any sign language present by sending the pre-processed data to a neural network. The output of the neural network is again processed (Natural Language Processing) to convert the signs to text.
 Our application will be built on Python and Tensorflow.
-
