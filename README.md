@@ -1,4 +1,4 @@
-[![Board Status](https://dev.azure.com/Mini-Project/a16ae0d8-ec9e-4a33-ba21-1fcbd57b18a5/411e1933-79f8-4d4e-8a17-7833098591d3/_apis/work/boardbadge/2a78519c-70cd-42ed-b8f6-6ed7da15ccbe)](https://dev.azure.com/Mini-Project/a16ae0d8-ec9e-4a33-ba21-1fcbd57b18a5/_boards/board/t/411e1933-79f8-4d4e-8a17-7833098591d3/Microsoft.RequirementCategory/)
+
 # Sign-Language-Interpreter
 ## Overview
 Sign language is an incredible advancement that brings the deaf and the dumb people close to our society. Unfortunately, some drawbacks have come along with this language. Not everyone knows how to interpret a sign language when having a conversation with a deaf and dumb person. One finds it hard to communicate without an interpreter. To solve this, we need an application that is easily available to all which converts the sign language to text in real-time. The main purpose of this project is to eliminate the barrier between the deaf and the dumb and the rest.
