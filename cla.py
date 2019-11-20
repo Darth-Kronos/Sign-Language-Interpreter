@@ -16,10 +16,10 @@ from keras.preprocessing.image import img_to_array
 import os
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False
-"""
-image1 = cv2.imread('A1.jpg')
+
+image1 = cv2.imread('/home/puru/Documents/Projects/tensorflow/SLI/Sign-Language-Interpreter/A2476.jpg')
 image = cv2.resize(image1, (28, 28))
-#image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 image = image.astype("float") / 255.0
 
 image = img_to_array(image)
@@ -37,15 +37,17 @@ images = np.array([i.flatten() for i in images])
 image = images.reshape(images.shape[0],28,28,1)[input_alpha_index]
 image = np.expand_dims(image, axis=0)
 image = image/255
+"""
 model = load_model('SLI.h5')
 
 lb = pickle.loads(open('lables.pickle', "rb").read())
-proba = model.predict(image)[0]
-idx = np.argmax(proba)
+proba = model.predict(image)
+print(proba)
+idx = np.argmax(proba[0])
 label = lb.classes_[idx]
 alpha = ['A','B','C','D','E','F','G','H','I','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y']
 print("Predicted output is: ")
 print(alpha[label])
-plt.imshow(images[input_alpha_index].reshape(28,28))
-plt.show()
+#plt.imshow(images[input_alpha_index].reshape(28,28))
+#plt.show()
 #print(model.summary())
