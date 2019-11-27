@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/puru/.virtualenvs/tensorflow/bin/python"
+    "python.pythonPath": "/home/puru/.virtualenvs/tensorflow/bin/python",
+    "git.ignoreLimitWarning": true
 }
